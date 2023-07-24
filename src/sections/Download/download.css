@@ -1,0 +1,15 @@
+.download {
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.download-header h2 {
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .download-header {
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+}

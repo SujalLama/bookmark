@@ -1,0 +1,19 @@
+.faq {
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.faq-content {
+    padding: 4rem 0;
+}
+
+.faq-header h2 {
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .faq-header {
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+}

@@ -22,7 +22,6 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -54,6 +53,22 @@ General Styling
 ==========
 */
 
+/*Skip to content*/
+#skip a {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+#skip a:focus {
+  height: auto;
+  position: static;
+  width: auto;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
 :root {
@@ -62,6 +77,10 @@ General Styling
   --primary-dark-color: hsl(229, 31%, 21%);
   --secondary-dark-color: hsl(0, 60%, 53%);
   --light-grey-color: hsl(229, 8%, 60%);
+}
+
+button {
+  font-family: 'Rubik', sans-serif;
 }
 
 /* converting to 10px so it becomes easier to count */
@@ -99,6 +118,8 @@ a {
   overflow-y: hidden;
 }
 
+
+
 /*
 ==========
 Typograpy
@@ -117,10 +138,12 @@ h1 {
 
 h2 {
   font-size: 2.8rem;
+  line-height: 1.4em;
 }
 
 h3 {
   font-size: 2rem;
+  line-height: 1.4em;
 }
 
 h1, h2 {
@@ -138,16 +161,16 @@ Page Layout
   margin: 0 3.2rem;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1024px) {
   .container {
-    max-width: 1220px;
+    max-width: 920px;
     margin: 0 auto;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .container {
-    max-width: 1280px;
+    max-width: 1080px;
     margin: 0 auto;
   }
 }

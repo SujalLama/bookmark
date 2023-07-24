@@ -71,14 +71,23 @@
     }
 
     .hero-img {
-        width: 50%;
+        max-width: 50%;
         margin-left: auto;
     }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
+    .hero-content {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .hero-content div {
-        max-width: 45rem;
+        max-width: 42rem;
+    }
+
+    .hero-img {
+        padding-right: calc((100% - 920px) / 2);
     }
 }
 
@@ -86,6 +95,12 @@
     .hero-content {
         margin: 0 auto;
     }
-}
-  
 
+    .hero-content div {
+        max-width: 45rem;
+    }
+
+    .hero-img {
+        padding-right: calc((100% - 1080px) / 2);
+    }
+}

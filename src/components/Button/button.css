@@ -2,12 +2,16 @@
     border: 0;
     background-color: none;
     outline: none;
-    padding: 0.9em 1.2em;
+    padding: 1em 1.2em;
     font-weight: 500;
     border-radius: 0.4em;
     font-size: 1.5rem;
     font-family: 'Rubik', sans-serif;
     cursor: pointer;
+}
+
+.btn:focus {
+    outline: 2px solid var(--primary-dark-color);
 }
 
 .btn--primary {
@@ -21,12 +25,16 @@
 
 .btn--outline {
     color: var(--primary-dark-color);
-    box-shadow: 0 3px 6px hsla(231, 69%, 60%, 30%);;
+    box-shadow: 0 3px 6px hsla(231, 69%, 60%, 30%);
 }
 
 .btn--outline:hover {
     background-color: var(--primary-dark-color);
     color: #fff;
+}
+
+.btn--outline:focus {
+    outline: 2px solid var(--primary-color);
 }
 
 .btn--secondary {
@@ -48,17 +56,55 @@
     letter-spacing: 0.1em;
 }
 
+.btn--nav:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+.btn--tabs {
+    display: block;
+    width: 100%;
+    background: none;
+    font-size: 2rem;
+    padding: 2rem 0;
+    border-top: 1px solid var(--light-grey-color);
+    font-weight: 500;
+    border-radius: 0;
+}
+
+.btn--tabs.active span {
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 2rem;
+}
+
+.btn--tabs:last-child {
+    border-bottom: 1px solid var(--light-grey-color);
+}
+
 @media (min-width: 600px) {
     .btn--nav {
         border: none;
         background-color: var(--secondary-color);
         font-size: 1.5rem;
+        letter-spacing: 0.2em;
         
     }
 }
 
-@media (min-width: 1080px) {
-    .btn--nav {
-        font-size: 1.8rem;
+@media (min-width: 768px) {
+    .btn--tabs {
+        border: none;
+        width: auto;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        border-bottom: 1px solid var(--light-grey-color);
+    }
+
+    .btn--tabs.active {
+        border-bottom: 3px solid var(--secondary-color);
+    }
+
+    .btn--tabs.active span {
+        border-bottom: 0;
+        padding-bottom: 0;
     }
 }

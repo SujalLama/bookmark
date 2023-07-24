@@ -1,0 +1,48 @@
+.card {
+    box-shadow: 0 3px 6px hsla(231, 69%, 60%, 30%);
+    margin: 4rem 0;
+}
+
+.card > img {
+    width: 100%;
+}
+
+.card-content {
+    padding: 4rem;
+}
+
+.card-content img {
+    margin: 2rem auto;
+    margin-bottom: 4rem;
+}
+
+.card-content h3 {
+    font-size: 2.3rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+}
+
+.card-footer {
+    padding: 4rem;
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: calc(50% - 4rem);
+        margin: 2rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    .card {
+        width: calc(33.33% - 4rem);
+    }
+
+    .card:nth-child(2) {
+        margin-top: 8rem;
+    }
+
+    .card:nth-child(3) {
+        margin-top: 16rem;
+    }
+}
